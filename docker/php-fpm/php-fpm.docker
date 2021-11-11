@@ -14,5 +14,4 @@ RUN apt-get update && apt-get install -y \
 RUN groupadd --gid $GROUP_ID node \
     && useradd --uid $USER_ID --gid node --shell /bin/bash --create-home node
 USER node
-GROUP node
 WORKDIR /var/www
